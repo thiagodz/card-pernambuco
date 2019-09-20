@@ -1,86 +1,93 @@
-body {
-  font-family: Montserrat;
-  margin-top: 20px;
-  text-align: right;
+* {
+    font-family: Montserrat;
+    box-sizing: border-box;
 }
 
-strong {
-  font-weight: Black;
+.card:hover .btn-pattern {
+    margin-top: 40px;
 }
 
-.carde {
-  background-color: #0C5AB4;
-  border-radius: 10px;
-  text-align: right;
-  padding: 20px;
-  box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.1);
-  margin-bottom: 15px;
+.card:hover .conteudo img {
+    margin-left: -40%
 }
 
-.carde img {
-  margin-left: -120px;
-  transition: 0.6s;
+.card:hover .conteudo {
+    background-color: #B8C0C7;
+    color: white;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-/* Hovers */
-
-.inteiro:hover .carde img {
-  margin-left: -100px;
+img {
+    width: 170%;
+    margin-left: -60%;
+    transition: 0.4s;
 }
 
-.inteiro:hover .btn-perna {
-  top: 0;
+.card {
+    transition: 0.4s;
 }
 
-/* PMoto */
-
-.nome-moto {
-  color: white;
-  display: inline-grid;
+.card-area {
+    max-width: 350px;
+    text-align: left;
+    margin: 0 auto;
+    background-color: #fff;
 }
 
-
-.preco-moto {
-  text-transform: uppercase;
-  color: white;
+.conteudo {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px 30px;
+    color: black;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: 0.4s;
 }
 
-.preco-moto span {
-  font-weight:  400 !important;
+.moto-name h3 {
+    line-height: 10px;
+    font-weight: bold;
 }
 
-.preco-moto strong {
-  font-size: 40px;
-  line-height: 30px;
+.moto-name h1 {
+    line-height: 10px;
 }
 
-.preco-moto strong sup {
-  font-size: 20px;
+.moto-price p {
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 0px;
 }
 
-/*  Botão  */
-
-.botao {
-  display: inline-flex;
-  align-items: center;
-  position: relative;
-  text-align: right;
+.moto-price h2 {
+    font-size: 50px;
+    line-height: 0px;
 }
 
-.btn-perna {
-  color: black;
-  z-index: -20;
-  position: relative;
-  margin-right: 20px;
-  transition: 0.3s;
+.moto-price h2 sup {
+    font-size: 20px;
+    line-height: 0px;
 }
 
-.arrow-right {
-  display: inline-block;
-  width: 0;
-  height: 0;
-  padding-left: 20px;
-  border-top: 8px solid transparent;
-  border-bottom: 8px solid transparent;
-  border-left:8px solid red;
+.btn-pattern {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    position: absolute;
+    margin-top: -10px;
+    display: flex;
+    z-index: -1;
+    transition: 0.4s;
+}
+
+.btn-pattern::after {
+    content: "";
+    display: block;
+    height: 0;
+    width: 0;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 8px solid red;
+    margin-left: 50px;
 }
